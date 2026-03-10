@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Ceasar A. Navarra | Portfolio</title>
+    <!-- Using Inter for a very clean, minimalist Swiss-style look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="light-mode">
+
+    <!-- Subtle grid background pattern -->
+    <div class="grid-background"></div>
+    <div class="animated-lines"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Optimus <span>™</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Features</a></li>
+                <li><a href="#skills">How it works</a></li>
+                <li><a href="#projects">Developers</a></li>
+                <li><a href="#experience">Pricing</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="nav-link">Sign in</a>
+                <a href="#contact" class="btn primary-btn small-btn">Start creating</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Wait, the user wants THEIR content, but styled like Optimus. I must use their content. -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">STPHNVRR_ <span>™</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Capabilities</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Academic</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn primary-btn small-btn">Contact</a>
+            </div>
+            <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.navbar').classList.toggle('nav-open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Capabilities</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Academic</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero section">
+            <div class="hero-content">
+                <div class="overline hero-overline">— Portfolio</div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Stephen Ceasar<br>Navarra</h1>
+                    <p class="hero-subtitle">Dedicated software developer with a strong commitment to continuous learning and the development of impactful applications. Proficient in engineering both user-facing interfaces and robust backend architectures. Demonstrated success in managing the full software development lifecycle from concept to deployment. Thrives in high-pressure environments, rapidly acquires new technical skills, and contributes effectively as a collaborative team member.</p>
+                    
+                    <div class="hero-actions mt-3">
+                        <a href="#projects" class="btn primary-btn">View My Projects &rarr;</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- Subtle ascii/geometric art or image goes here -->
+                    <div class="profile-img-container">
+                        <img src="{{ url_for('static', filename='images/profile.JPG') }}" alt="Stephen Ceasar A. Navarra" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Stephen+Navarra&size=400&background=F7F7F7&color=000000'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities / Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <div class="overline">— Capabilities</div>
+                <h2 class="section-title">Everything you need.<br><span class="text-muted">Nothing you don't.</span></h2>
+            </div>
+            
+            <div class="skills-container mt-5">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>Personal Information</h3>
+                        <div class="split-columns">
+                            <div class="info-elements-minimal">
+                                <div class="info-item-minimal">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Butuan City, Philippines</span>
+                                </div>
+                                <div class="info-item-minimal">
+                                    <span class="info-label">Born</span>
+                                    <span class="info-value">October 3, 2002</span>
+                                </div>
+                                <div class="info-item-minimal">
+                                    <span class="info-label">Current Age</span>
+                                    <span class="info-value"><span id="dynamic-age"></span> y/o</span>
+                                </div>
+                            </div>
+                            <div class="info-elements-minimal">
+                                <div class="info-item-minimal">
+                                    <span class="info-label">Citizenship</span>
+                                    <span class="info-value">Filipino</span>
+                                </div>
+                                <div class="info-item-minimal">
+                                    <span class="info-label">Role</span>
+                                    <span class="info-value">Software Developer</span>
+                                </div>
+                                <div class="info-item-minimal">
+                                    <span class="info-label">Availability</span>
+                                    <span class="info-value">Open for Hire</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>Technical Skills</h3>
+                        <div class="split-columns">
+                            <div class="skills-grid-minimal">
+                                <div class="skill-group">
+                                    <span class="group-label">Web Development</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">HTML</span>
+                                        <span class="skill-tag">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Mobile Development</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">React Native</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Programming Languages</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">Java</span>
+                                        <span class="skill-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Frameworks & Libraries</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Flask</span>
+                                        <span class="skill-tag">Django</span>
+                                        <span class="skill-tag">Bootstrap CSS</span>
+                                        <span class="skill-tag">React.js</span>
+                                        <span class="skill-tag">Tkinter</span>
+                                        <span class="skill-tag">Flet</span>
+                                        <span class="skill-tag">FastAPI</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Hardware & IoT</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Raspberry Pi</span>
+                                        <span class="skill-tag">Arduino</span>
+                                        <span class="skill-tag">ESP32</span>
+                                        <span class="skill-tag">NodeMCU</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-grid-minimal">
+                                <div class="skill-group">
+                                    <span class="group-label">Cloud & Hosting</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">PythonAnywhere</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Databases</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">MySQL</span>
+                                        <span class="skill-tag">SQLite</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Backend Services</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Firebase</span>
+                                        <span class="skill-tag">Supabase</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Specialized Tools</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Git</span>
+                                        <span class="skill-tag">OpenCV</span>
+                                        <span class="skill-tag">Mapbox</span>
+                                        <span class="skill-tag">Microsoft Office Suite</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Graphic Design Tools</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Canva</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>Soft Skills</h3>
+                        <div class="split-columns">
+                            <div class="skill-tags mt-2">
+                                <span class="skill-tag">Critical Thinking</span>
+                                <span class="skill-tag">Time Management</span>
+                                <span class="skill-tag">Leadership Collaboration</span>
+                                <span class="skill-tag">Pressure Handling</span>
+                                <span class="skill-tag">Technical Communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Dark Mode Transition matching the screenshot) -->
+        <section id="projects" class="section dark-section full-width-section">
+            <div class="section-inner">
+                <div class="section-header">
+                    <div class="overline">— Portfolio</div>
+                    <h2 class="section-title">Featured Projects.<br><span class="text-muted">Built for impact.</span></h2>
+                </div>
+                
+                <div class="projects-layout mt-5">
+                    <div class="projects-list">
+                        <div class="project-item">
+                            <div class="project-num">I</div>
+                            <div class="project-details">
+                                <h3>SafeBite</h3>
+                                <p class="project-tech">Android Application for Crime-Safe Travel with AR Navigation. (React Native, Python (FastAPI), Unity, Firebase, Mapbox)</p>
+                                <div class="project-desc-wrapper">
+                                    <p class="project-desc">Designed and developed a mobile application and administrative platform with integrated mapping features to ensure user safety, providing both pedestrians and private vehicle users with crime-avoidant routes to local restaurants, and featuring augmented reality (AR) navigation for real-time, turn-by-turn directions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-num">II</div>
+                            <div class="project-details">
+                                <h3>The Potter's House</h3>
+                                <p class="project-tech">Inventory & Procurement Management System.<br>(Python (Django), MySQL, HTML/CSS, Bootstrap CSS, JavaScript (Chart.js))</p>
+                                <div class="project-desc-wrapper">
+                                    <p class="project-desc">Designed and developed a web-based inventory and administrative platform with integrated procurement features to streamline business operations, providing staff with robust tools to track stock levels, manage purchase requests and orders, and calculate complex product costs, and featuring dynamic data visualization for real-time monitoring of transaction trends and operational accountability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-num">III</div>
+                            <div class="project-details">
+                                <h3>LoKal AI Assistant</h3>
+                                <p class="project-tech">Offline Educational AI Learning Assistant.<br>(Python (Django), JavaScript, HTML/CSS, SQLite, Ollama, Vosk, Raspberry Pi 4B)</p>
+                                <div class="project-desc-wrapper">
+                                    <p class="project-desc">Designed and developed a production-ready offline educational platform with integrated local AI models to ensure accessible learning, providing students with an internet-free conversational assistant, and featuring voice recognition and automated Wi-Fi hotspot deployment for seamless, zero-configuration device connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-num">IV</div>
+                            <div class="project-details">
+                                <h3>KickX E-commerce</h3>
+                                <p class="project-tech">Sneaker Retail Platform with Recommendation Engine.<br>(Python (Flask), SQLite, HTML/CSS, Bootstrap 5, JavaScript (PayPal SDK), Data Analysis (Pandas/NumPy))</p>
+                                <div class="project-desc-wrapper">
+                                    <p class="project-desc">Designed and developed a web-based e-commerce and administrative platform with integrated shopping features to streamline the retail experience, providing users with robust tools to browse product catalogs, manage shopping carts and wish lists, and process secure payments, and featuring a dynamic recommendation engine for personalized product discovery and real-time tracking of trending items.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-num">V</div>
+                            <div class="project-details">
+                                <h3>Garbage Bot Picker</h3>
+                                <p class="project-tech">Gesture-Controlled Robotic Vehicle.<br>(Python (Flask, OpenCV), NodeMCU, MPU6050, Raspberry Pi (GPIO), ESP32-CAM, TCP/IP Sockets)</p>
+                                <div class="project-desc-wrapper">
+                                    <p class="project-desc">Designed and programmed a gesture-controlled robotic vehicle featuring a mechanized arm, real-time video streaming (ESP32-CAM/OpenCV), and an intuitive NodeMCU and MPU6050-based control system that translates hand orientation by moving your hand in different directions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-num">VI</div>
+                            <div class="project-details">
+                                <h3>PHQuest</h3>
+                                <p class="project-tech">Philippine Discovery Quiz Game.<br>(React Native, Python (FastAPI), SQLite)</p>
+                                <div class="project-desc-wrapper">
+                                    <p class="project-desc">Designed and developed an interactive mobile application and backend server with dynamic quiz mechanics to promote cultural awareness, providing players with immersive quests focusing on the Geography, History, and Culture of the Philippines, and featuring a real-time global leaderboard, life systems, and detailed performance tracking.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-visual-mockup">
+                        <div class="mockup-header">
+                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                            <span class="mockup-title">developer.py</span>
+                        </div>
+                        <div class="mockup-body">
+<pre><code><span class="line-num">1</span> <span class="method">developer</span> = {
+<span class="line-num">2</span>   <span class="key">"name"</span>: <span class="string">"Stephen Ceasar Navarra"</span>,
+<span class="line-num">3</span>   <span class="key">"education"</span>: <span class="string">"BS Information Technology"</span>,
+<span class="line-num">4</span>   <span class="key">"roles"</span>: [<span class="string">"Software Developer"</span>, <span class="string">"IT Programmer"</span>],
+<span class="line-num">5</span>   <span class="key">"status"</span>: <span class="string">"Open for Hire"</span>
+<span class="line-num">6</span> }
+<span class="line-num">7</span> 
+<span class="line-num">8</span> <span class="comment"># Ready to build great things</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <div class="overline">— Academic Journey</div>
+                <h2 class="section-title">Academic Evolution</h2>
+            </div>
+            
+            <div class="experience-grid mt-5">
+                <div class="timeline-column">
+                    <div class="timeline-minimal" style="margin-bottom: 3rem;">
+                        <h3 class="subsection-title">Experience</h3>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">Butuan City</div>
+                            <div class="timeline-info">
+                                <h4>IT Programmer - The Potter's House by Chinyu</h4>
+                                <p class="timeline-short">Developed a comprehensive inventory management system to track products and streamline daily stock operations.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Implemented digital Purchase Order (PO) and Purchase Request (PR) workflows to improve procurement efficiency and speed. Built data visualization dashboards to show transaction trends and distribution, aiding management in business decision-making. Created activity logging features to monitor inventory movements and ensure operational accountability. Collaborated with staff to understand their workflow needs and deliver a centralized platform that significantly reduces manual errors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">Butuan City</div>
+                            <div class="timeline-info">
+                                <h4>Trainer - PyBalanghay Organization</h4>
+                                <p class="timeline-short">Conducted hands-on technical workshops for college peers, breaking down complex programming concepts into practical, easy-to-understand lessons.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Spearheaded community outreach programs, introducing local high school students to foundational coding skills and technology through interactive training sessions. Developed training materials, presentations, and coding exercises designed to accommodate and engage learners of varying technical backgrounds. Mentored students during live coding activities, providing real-time troubleshooting and fostering a highly collaborative learning environment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="timeline-date">Butuan City</div>
+                            <div class="timeline-info">
+                                <h4>President - EGF Organization</h4>
+                                <p class="timeline-short">Directed the campus chapter of the EGF-New Life a Roman Catholic community, aligning all student activities and outreach with the core vision of "Winning, Witnessing, and Working with Christ."</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Facilitated mentorship and spiritual growth programs, guiding peers through spiritual development and helping them transform from their old lives to a renewed sense of purpose to Christ Jesus. Organized and led community gatherings, prayer meetings, and campus events to build a strong, supportive, and welcoming environment for students. Managed the organization's daily operations, overseeing schedules, communications, and student engagement while serving as the primary bridge to the main EGF-New Life Community in Butuan City.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-minimal" style="margin-bottom: 3rem;">
+                        <h3 class="subsection-title">Volunteer Work</h3>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">Feb 2025</div>
+                            <div class="timeline-info">
+                                <h4>PyBalanghay Org Extension Service</h4>
+                                <p class="timeline-short">Libertad National High School.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Served as a trainer for the community extension program, teaching high school students on Basic Python Programming Language with Tkinter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">Mar 2025</div>
+                            <div class="timeline-info">
+                                <h4>PyBalanghay Org Extension Service</h4>
+                                <p class="timeline-short">Taligaman National High School.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Served as a trainer for the community extension program, teaching ICT students the fundamentals of Python programming.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-minimal">
+                        <h3 class="subsection-title">Education</h3>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">2022 - 2026</div>
+                            <div class="timeline-info">
+                                <h4>BS Information Technology</h4>
+                                <p>ACLC College Of Butuan<br><span style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan, Philippines</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <div class="timeline-info">
+                                <h4>Senior High School</h4>
+                                <p>Ampayon National High School<br><span style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan, Philippines</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">2015 - 2019</div>
+                            <div class="timeline-info">
+                                <h4>Junior High School</h4>
+                                <p>Ampayon National High School<br><span style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan, Philippines</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">2009 - 2015</div>
+                            <div class="timeline-info">
+                                <h4>Elementary</h4>
+                                <p>Ampayon Central High School<br><span style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan, Philippines</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-column">
+                    <div class="timeline-minimal" style="margin-bottom: 3rem;">
+                        <h3 class="subsection-title">Achievements</h3>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">Nov 2024</div>
+                            <div class="timeline-info">
+                                <h4>PyBalanghay Organization Workshop</h4>
+                                <p class="timeline-short">Trainer & Associate Trainer.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Honored for invaluable efforts as a Trainer for "Basic Python Programming Language with Tkinter" and recognized for selfless dedication as an Associate Trainer for "Basic Web Development Using Python Flask" at ACLC College.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="timeline-date">Aug 2024</div>
+                            <div class="timeline-info">
+                                <h4>HACKFORGOV: Capture-the-flag</h4>
+                                <p class="timeline-short">DICT Caraga regional competition on Cybersecurity.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Actively participated in the regional competition focused on the theme, "Today's Generation, Tomorrow's Champion: Shaping the Future of Cybersecurity through Shared Responsibility."</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">May 2024</div>
+                            <div class="timeline-info">
+                                <h4>PSITE ICT Student Congress 2024</h4>
+                                <p class="timeline-short">Programming Contest and ICT Congress.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Participated in the Programming Contest and engaged with industry leaders to explore emerging trends in ICT and contribute to meaningful discussions on technology's future.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="timeline-date">May 2024</div>
+                            <div class="timeline-info">
+                                <h4>ACLC Community Extension Service</h4>
+                                <p class="timeline-short">Facilitator at Bancasi Integrated School.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Received recognition for exceptional dedication as a Facilitator for the "Empowering Students Through Digital Knowledge" initiative.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-minimal" style="margin-top: 122px;">
+                        <h3 class="subsection-title">Workshops & Seminars</h3>
+                        
+                        <div class="timeline-row">
+                            <div class="timeline-date">May 2024</div>
+                            <div class="timeline-info">
+                                <h4>ACLC Community Service</h4>
+                                <p class="timeline-short">Empowering Students through Digital Knowledge.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Participated in the "Empowering Students through Digital Knowledge" ACLC Community Service initiative.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="timeline-date">Nov 2022</div>
+                            <div class="timeline-info">
+                                <h4>Productivity Tools Training</h4>
+                                <p class="timeline-short">Workshop on Python & Adobe Photoshop.</p>
+                                <div class="timeline-desc-wrapper">
+                                    <p class="timeline-desc">Completed Productivity Tools Training and Workshop on Python Programming Language and Adobe Photoshop.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section dark-section full-width-section">
+            <div class="section-inner">
+                <div class="section-header">
+                    <div class="overline">— Contact</div>
+                    <h2 class="section-title">Let's build<br><span class="text-muted-dark">something great.</span></h2>
+                    <p class="hero-subtitle text-muted-dark" style="max-width: 500px; margin-top: 1rem;">Looking for a dedicated software developer to join your team?</p>
+                </div>
+                
+                <div class="contact-layout mt-2 ">
+                    <div class="contact-content-col">
+                        <div class="info-elements-minimal dark-version">    
+                            <div class="info-item-minimal">
+                                <span class="info-label">Email</span>
+                                <a href="mailto:stephenavarra.work@gmail.com" class="info-value">stephenavarra.work@gmail.com</a>
+                            </div>
+                            <div class="info-item-minimal">
+                                <span class="info-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/stephen-ceasar-navarra" target="_blank" rel="noopener noreferrer" class="info-value">linkedin.com/in/stephen-ceasar-navarra</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-actions mt-5">
+                            <div class="hero-actions">
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stephenavarra.work@gmail.com" target="_blank" class="btn primary-btn" style="background:#fff; color:#000; border-color:#fff;">Get in touch &rarr;</a>
+                                <a href="{{ url_for('static', filename='files/Stephen-Ceasar-Navarra-Resume.pdf') }}" class="btn secondary-btn" style="background:transparent; color:#fff; border-color:#444;" download>Download Resume</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Abstract minimal visual for empty space -->
+                    <div class="contact-visual-col reveal">
+                        <div class="minimal-art-wrapper">
+                            <div class="celestial-sphere">
+                                <div class="celestial-ring c-ring-1"></div>
+                                <div class="celestial-ring c-ring-2"></div>
+                                <div class="celestial-ring c-ring-3"></div>
+                                <div class="celestial-core"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="footer-content">
+            <div class="footer-logo">STPHNVRR_ <span>™</span></div>
+            <p>&copy; 2026 STPHNVRR_. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script for Reveal Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Dynamically add reveal class to individual elements for a staggered, minimal effect
+            const revealElements = document.querySelectorAll(
+                '.hero-text, .hero-image-wrapper, .section-header, .feature-card, .project-card, .timeline-container, .contact-content-col, .contact-visual-col'
+            );
+            
+            revealElements.forEach((el, index) => {
+                el.classList.add('reveal');
+                // Optional: add a tiny staggered transition delay based on DOM order for elements in same section
+                el.style.transitionDelay = `${(index % 3) * 0.15}s`;
+                observer.observe(el);
+            });
+
+            // Clean up old navigation
+            const firstNav = document.querySelectorAll('nav.navbar')[0];
+            if(document.querySelectorAll('nav.navbar').length > 1) {
+                firstNav.remove(); // removes the Optimus placeholder one
+            }
+
+            // Smooth scrolling for all internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#') {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Generate some random ascii background bits for the light mode hero
+            const gridBg = document.querySelector('.grid-background');
+            for(let i=0; i<100; i++) {
+                let el = document.createElement('div');
+                el.className = 'bg-mark';
+                el.style.left = Math.random() * 100 + 'vw';
+                el.style.top = Math.random() * 100 + 'vh';
+                el.innerText = Math.random() > 0.5 ? '┬' : '├';
+                if(Math.random() > 0.8) el.innerText = '┼';
+                gridBg.appendChild(el);
+            }
+
+            // Generate minimal floating lines
+            const animatedLines = document.querySelector('.animated-lines');
+            if (animatedLines) {
+                for (let i = 0; i < 15; i++) {
+                    let line = document.createElement('div');
+                    line.className = 'floating-line';
+                    line.style.left = Math.random() * 100 + 'vw';
+                    line.style.height = (Math.random() * 150 + 100) + 'px';
+                    line.style.animationDuration = (Math.random() * 15 + 15) + 's';
+                    line.style.animationDelay = (Math.random() * 10) + 's';
+                    animatedLines.appendChild(line);
+                }
+            }
+
+            // Calculate Dynamic Age based on birthday
+            const birthDate = new Date('2002-10-03');
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            const ageSpan = document.getElementById('dynamic-age');
+            if(ageSpan) {
+                ageSpan.textContent = age;
+            }
+        });
+    </script>
+    <!-- Touch/Click Toggle for Project Items on Mobile -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const isTouchDevice = () => ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
+            // --- Project Items ---
+            const projectItems = document.querySelectorAll('.project-item');
+
+            projectItems.forEach(item => {
+                if (isTouchDevice()) {
+                    const hint = document.createElement('span');
+                    hint.className = 'tap-hint';
+                    hint.textContent = '▾';
+                    item.appendChild(hint);
+                }
+
+                item.addEventListener('click', function () {
+                    if (!isTouchDevice()) return;
+                    const isExpanded = this.classList.contains('project-expanded');
+                    projectItems.forEach(other => other.classList.remove('project-expanded'));
+                    if (!isExpanded) this.classList.add('project-expanded');
+                });
+            });
+
+            // --- Timeline Rows (Academic Section) ---
+            const timelineRows = document.querySelectorAll('.timeline-row');
+
+            timelineRows.forEach(row => {
+                const desc = row.querySelector('.timeline-desc');
+                if (isTouchDevice() && desc) {
+                    const hint = document.createElement('span');
+                    hint.className = 'tap-hint light';
+                    hint.textContent = '▾';
+                    row.style.position = 'relative';
+                    row.style.cursor = 'pointer';
+                    row.appendChild(hint);
+                }
+
+                row.addEventListener('click', function () {
+                    if (!isTouchDevice()) return;
+                    const isExpanded = this.classList.contains('timeline-expanded');
+                    timelineRows.forEach(other => other.classList.remove('timeline-expanded'));
+                    if (!isExpanded) this.classList.add('timeline-expanded');
+                });
+            });
+        });
+    </script>
+    <script>
+        // Smooth scrolling for mobile nav links
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                // Close the menu first
+                document.querySelector('.navbar').classList.remove('nav-open');
+                
+                if (targetElement) {
+                    // Slight delay to allow the menu close animation to start if needed, 
+                    // though usually not strictly necessary for the scroll itself
+                    setTimeout(() => {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 5, // Optimized for tighter fit
+                            behavior: 'smooth'
+                        });
+                    }, 50);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Flask
+instance/
+.webassets-cache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project Specific
+Stephen-Ceasar-Navarra-Resume.md
+extract.py
+*.md
+!README.md
+!walkthrough.md
+!audit_report.md
+!implementation_plan.md
+task.md
