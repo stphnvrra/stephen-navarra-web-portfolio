@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephen Ceasar A. Navarra | Portfolio</title>
+    <title>STPHNVRR_ | Portfolio</title>
     <!-- Using Inter for a very clean, minimalist Swiss-style look -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -66,17 +66,18 @@
                 <div class="overline hero-overline">— Portfolio</div>
                 <div class="hero-text">
                     <h1 class="hero-title">Stephen Ceasar<br>Navarra</h1>
-                    <p class="hero-subtitle">Dedicated software developer with a strong commitment to continuous learning and the development of impactful applications. Proficient in engineering both user-facing interfaces and robust backend architectures. Demonstrated success in managing the full software development lifecycle from concept to deployment. Thrives in high-pressure environments, rapidly acquires new technical skills, and contributes effectively as a collaborative team member.</p>
+                    <p class="hero-subtitle">I am a Web Developer who builds great websites that help your business grow and reach more people. While my main focus is web development, I also have strong skills in mobile apps and smart hardware (IoT). I turn complex ideas into simple, professional tools that get results. I handle everything from the first design to the final launch, making sure your project is fast, secure, and easy for everyone to use. Let’s work together to build a digital solution that makes your business stand out and run more smoothly.</p>
                     
                     <div class="hero-actions mt-3">
-                        <a href="#projects" class="btn primary-btn">View My Projects &rarr;</a>
-                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                        <a href="#projects" class="btn primary-btn">See What I've Built &rarr;</a>
+                        <a href="#contact" class="btn secondary-btn">Hire Me</a>
+                        <a href="https://github.com/stphnvrra" target="_blank" rel="noopener noreferrer" class="btn secondary-btn"><i class="fa-brands fa-github"></i>&nbspGitHub</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
                     <!-- Subtle ascii/geometric art or image goes here -->
                     <div class="profile-img-container">
-                        <img src="{{ url_for('static', filename='images/profile.JPG') }}" alt="Stephen Ceasar A. Navarra" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Stephen+Navarra&size=400&background=F7F7F7&color=000000'">
+                        <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Stephen Ceasar A. Navarra" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Stephen+Navarra&size=400&background=F7F7F7&color=000000'">
                     </div>
                 </div>
             </div>
@@ -85,8 +86,8 @@
         <!-- Capabilities / Skills Section -->
         <section id="skills" class="section">
             <div class="section-header">
-                <div class="overline">— Capabilities</div>
-                <h2 class="section-title">Everything you need.<br><span class="text-muted">Nothing you don't.</span></h2>
+                <div class="overline">— What I Bring to the Table</div>
+                <h2 class="section-title">Skills that deliver results.<br><span class="text-muted">Tools that get the job done.</span></h2>
             </div>
             
             <div class="skills-container mt-5">
@@ -116,11 +117,11 @@
                                 </div>
                                 <div class="info-item-minimal">
                                     <span class="info-label">Role</span>
-                                    <span class="info-value">Software Developer</span>
+                                    <span class="info-value">Web Developer</span>
                                 </div>
                                 <div class="info-item-minimal">
                                     <span class="info-label">Availability</span>
-                                    <span class="info-value">Open for Hire</span>
+                                    <span class="info-value">Available Now</span>
                                 </div>
                             </div>
                         </div>
@@ -138,12 +139,11 @@
                                     <div class="skill-tags">
                                         <span class="skill-tag">HTML</span>
                                         <span class="skill-tag">CSS</span>
-                                    </div>
-                                </div>
-                                <div class="skill-group">
-                                    <span class="group-label">Mobile Development</span>
-                                    <div class="skill-tags">
-                                        <span class="skill-tag">React Native</span>
+                                        <span class="skill-tag">Bootstrap CSS</span>
+                                        <span class="skill-tag">React.js</span>
+                                        <span class="skill-tag">Flask</span>
+                                        <span class="skill-tag">Django</span>
+                                        <span class="skill-tag">FastAPI</span>
                                     </div>
                                 </div>
                                 <div class="skill-group">
@@ -155,17 +155,22 @@
                                     </div>
                                 </div>
                                 <div class="skill-group">
-                                    <span class="group-label">Frameworks & Libraries</span>
+                                    <span class="group-label">Databases & Backend</span>
                                     <div class="skill-tags">
-                                        <span class="skill-tag">Flask</span>
-                                        <span class="skill-tag">Django</span>
-                                        <span class="skill-tag">Bootstrap CSS</span>
-                                        <span class="skill-tag">React.js</span>
-                                        <span class="skill-tag">Tkinter</span>
-                                        <span class="skill-tag">Flet</span>
-                                        <span class="skill-tag">FastAPI</span>
+                                        <span class="skill-tag">MySQL</span>
+                                        <span class="skill-tag">SQLite</span>
+                                        <span class="skill-tag">Firebase</span>
+                                        <span class="skill-tag">Supabase</span>
                                     </div>
                                 </div>
+                                <div class="skill-group">
+                                    <span class="group-label">Mobile Development</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">React Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-grid-minimal">
                                 <div class="skill-group">
                                     <span class="group-label">Hardware & IoT</span>
                                     <div class="skill-tags">
@@ -175,26 +180,10 @@
                                         <span class="skill-tag">NodeMCU</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="skills-grid-minimal">
                                 <div class="skill-group">
                                     <span class="group-label">Cloud & Hosting</span>
                                     <div class="skill-tags">
                                         <span class="skill-tag">PythonAnywhere</span>
-                                    </div>
-                                </div>
-                                <div class="skill-group">
-                                    <span class="group-label">Databases</span>
-                                    <div class="skill-tags">
-                                        <span class="skill-tag">MySQL</span>
-                                        <span class="skill-tag">SQLite</span>
-                                    </div>
-                                </div>
-                                <div class="skill-group">
-                                    <span class="group-label">Backend Services</span>
-                                    <div class="skill-tags">
-                                        <span class="skill-tag">Firebase</span>
-                                        <span class="skill-tag">Supabase</span>
                                     </div>
                                 </div>
                                 <div class="skill-group">
@@ -223,11 +212,11 @@
                         <h3>Soft Skills</h3>
                         <div class="split-columns">
                             <div class="skill-tags mt-2">
-                                <span class="skill-tag">Critical Thinking</span>
-                                <span class="skill-tag">Time Management</span>
-                                <span class="skill-tag">Leadership Collaboration</span>
-                                <span class="skill-tag">Pressure Handling</span>
-                                <span class="skill-tag">Technical Communication</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Meeting Deadlines</span>
+                                <span class="skill-tag">Team Collaboration</span>
+                                <span class="skill-tag">Calm Under Pressure</span>
+                                <span class="skill-tag">Clear Communication</span>
                             </div>
                         </div>
                     </div>
@@ -239,8 +228,8 @@
         <section id="projects" class="section dark-section full-width-section">
             <div class="section-inner">
                 <div class="section-header">
-                    <div class="overline">— Portfolio</div>
-                    <h2 class="section-title">Featured Projects.<br><span class="text-muted">Built for impact.</span></h2>
+                    <div class="overline">— Real Work, Real Results</div>
+                    <h2 class="section-title">Projects I've built.<br><span class="text-muted">Problems I've solved.</span></h2>
                 </div>
                 
                 <div class="projects-layout mt-5">
@@ -248,60 +237,60 @@
                         <div class="project-item">
                             <div class="project-num">I</div>
                             <div class="project-details">
-                                <h3>SafeBite</h3>
-                                <p class="project-tech">Android Application for Crime-Safe Travel with AR Navigation. (React Native, Python (FastAPI), Unity, Firebase, Mapbox)</p>
+                                <h3>The Potter's House</h3>
+                                <p class="project-tech">Inventory & Procurement Management System.<br>(Python (Django), MySQL, HTML/CSS, Bootstrap CSS, JavaScript (Chart.js))</p>
                                 <div class="project-desc-wrapper">
-                                    <p class="project-desc">Designed and developed a mobile application and administrative platform with integrated mapping features to ensure user safety, providing both pedestrians and private vehicle users with crime-avoidant routes to local restaurants, and featuring augmented reality (AR) navigation for real-time, turn-by-turn directions.</p>
+                                    <p class="project-desc">A real business needed a better way to manage their products and orders — so I built them one. Before my system, the staff tracked everything on paper, which led to costly errors. I created a clean web dashboard where they can check stock levels, manage purchase requests, approve orders, and calculate product costs automatically. I also added visual charts so the owners can instantly see sales trends and make smarter decisions. This project saved the business hours of manual work every week.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="project-item">
                             <div class="project-num">II</div>
                             <div class="project-details">
-                                <h3>The Potter's House</h3>
-                                <p class="project-tech">Inventory & Procurement Management System.<br>(Python (Django), MySQL, HTML/CSS, Bootstrap CSS, JavaScript (Chart.js))</p>
+                                <h3>KickX E-commerce</h3>
+                                <p class="project-tech">Sneaker Retail Platform with Recommendation Engine.<br>(Python (Flask), Supabase, HTML/CSS, Bootstrap 5, JavaScript (PayPal SDK), Data Analysis (Pandas/NumPy))</p>
                                 <div class="project-desc-wrapper">
-                                    <p class="project-desc">Designed and developed a web-based inventory and administrative platform with integrated procurement features to streamline business operations, providing staff with robust tools to track stock levels, manage purchase requests and orders, and calculate complex product costs, and featuring dynamic data visualization for real-time monitoring of transaction trends and operational accountability.</p>
+                                    <p class="project-desc">I built a complete online store from the ground up where users can browse sneakers, add them to their cart, save favorites to a wishlist, and pay safely through PayPal. What makes this store special is the smart recommendation system I created — it tracks what's popular and suggests the right products to each user, which helps drive more sales. The store owner also gets an admin panel to manage products, view orders, and track everything in one place. This project shows I can build e-commerce solutions that actually sell.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="project-item">
                             <div class="project-num">III</div>
                             <div class="project-details">
-                                <h3>LoKal AI Assistant</h3>
-                                <p class="project-tech">Offline Educational AI Learning Assistant.<br>(Python (Django), JavaScript, HTML/CSS, SQLite, Ollama, Vosk, Raspberry Pi 4B)</p>
+                                <h3>SafeBite</h3>
+                                <p class="project-tech">Android Application for Crime-Safe Travel with AR Navigation. (React Native, Python (FastAPI), Unity, Firebase, Mapbox)</p>
                                 <div class="project-desc-wrapper">
-                                    <p class="project-desc">Designed and developed a production-ready offline educational platform with integrated local AI models to ensure accessible learning, providing students with an internet-free conversational assistant, and featuring voice recognition and automated Wi-Fi hotspot deployment for seamless, zero-configuration device connections.</p>
+                                    <p class="project-desc">Safety is a real problem for people traveling in unfamiliar areas. Our team built SafeBite to solve that — it uses crime data to find the safest walking or driving routes to nearby restaurants. The app's best feature is its AR navigation, which overlays turn-by-turn directions on your phone's camera so you never get lost. I was responsible for building the backend server that handles all the map data, user routes, and safety calculations quickly and securely. This project proves I can work with complex data and deliver apps that truly help people.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="project-item">
                             <div class="project-num">IV</div>
                             <div class="project-details">
-                                <h3>KickX E-commerce</h3>
-                                <p class="project-tech">Sneaker Retail Platform with Recommendation Engine.<br>(Python (Flask), SQLite, HTML/CSS, Bootstrap 5, JavaScript (PayPal SDK), Data Analysis (Pandas/NumPy))</p>
+                                <h3>LoKal AI Assistant</h3>
+                                <p class="project-tech">Offline Educational AI Learning Assistant.<br>(Python (Django), JavaScript, HTML/CSS, SQLite, Ollama, Vosk, Raspberry Pi 4B)</p>
                                 <div class="project-desc-wrapper">
-                                    <p class="project-desc">Designed and developed a web-based e-commerce and administrative platform with integrated shopping features to streamline the retail experience, providing users with robust tools to browse product catalogs, manage shopping carts and wish lists, and process secure payments, and featuring a dynamic recommendation engine for personalized product discovery and real-time tracking of trending items.</p>
+                                    <p class="project-desc">Many students in the Philippines don't have internet access, but they still deserve great learning tools. I built LoKal AI to solve this — it runs entirely offline on a small Raspberry Pi computer and hosts a smart AI chatbot that answers study questions anytime. The system even creates its own Wi-Fi hotspot automatically, so students just connect their phones and start learning with zero setup. This project shows I can build complete systems that work in the most challenging environments, not just perfect lab conditions.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="project-item">
                             <div class="project-num">V</div>
                             <div class="project-details">
-                                <h3>Garbage Bot Picker</h3>
-                                <p class="project-tech">Gesture-Controlled Robotic Vehicle.<br>(Python (Flask, OpenCV), NodeMCU, MPU6050, Raspberry Pi (GPIO), ESP32-CAM, TCP/IP Sockets)</p>
+                                <h3>PHQuest</h3>
+                                <p class="project-tech">Philippine Discovery Quiz Game.<br>(React Native, Python (FastAPI), SQLite)</p>
                                 <div class="project-desc-wrapper">
-                                    <p class="project-desc">Designed and programmed a gesture-controlled robotic vehicle featuring a mechanized arm, real-time video streaming (ESP32-CAM/OpenCV), and an intuitive NodeMCU and MPU6050-based control system that translates hand orientation by moving your hand in different directions.</p>
+                                    <p class="project-desc">I wanted to help people learn about Philippine history and culture in a way that's actually fun. PHQuest is an interactive mobile game where players complete quests and quizzes about the country's geography, history, and traditions. I built a real-time global leaderboard so players can compete with each other, plus a detailed performance tracker that shows how much they've learned. The full backend server handles all user data, scoring, and rankings. It proves I can build engaging mobile experiences with solid backend systems.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="project-item">
                             <div class="project-num">VI</div>
                             <div class="project-details">
-                                <h3>PHQuest</h3>
-                                <p class="project-tech">Philippine Discovery Quiz Game.<br>(React Native, Python (FastAPI), SQLite)</p>
+                                <h3>Garbage Bot Picker</h3>
+                                <p class="project-tech">Gesture-Controlled Robotic Vehicle.<br>(Python (Flask, OpenCV), NodeMCU, MPU6050, Raspberry Pi (GPIO), ESP32-CAM, TCP/IP Sockets)</p>
                                 <div class="project-desc-wrapper">
-                                    <p class="project-desc">Designed and developed an interactive mobile application and backend server with dynamic quiz mechanics to promote cultural awareness, providing players with immersive quests focusing on the Geography, History, and Culture of the Philippines, and featuring a real-time global leaderboard, life systems, and detailed performance tracking.</p>
+                                    <p class="project-desc">This project combined web development with robotics. I programmed a vehicle that responds to hand gestures in real time — tilt your hand forward and it drives forward, rotate it and the arm grabs objects. It streams live video from an onboard camera so you can see exactly what the robot sees. I built the Flask web server that connects the sensors to the motors and handles the video feed. This project proves I can work beyond just websites and bring code into the physical world when needed.</p>
                                 </div>
                             </div>
                         </div>
@@ -316,11 +305,11 @@
 <pre><code><span class="line-num">1</span> <span class="method">developer</span> = {
 <span class="line-num">2</span>   <span class="key">"name"</span>: <span class="string">"Stephen Ceasar Navarra"</span>,
 <span class="line-num">3</span>   <span class="key">"education"</span>: <span class="string">"BS Information Technology"</span>,
-<span class="line-num">4</span>   <span class="key">"roles"</span>: [<span class="string">"Software Developer"</span>, <span class="string">"IT Programmer"</span>],
-<span class="line-num">5</span>   <span class="key">"status"</span>: <span class="string">"Open for Hire"</span>
+<span class="line-num">4</span>   <span class="key">"roles"</span>: [<span class="string">"Web Developer"</span>, <span class="string">"IT Programmer"</span>],
+<span class="line-num">5</span>   <span class="key">"status"</span>: <span class="string">"Available Now — Let's Talk"</span>
 <span class="line-num">6</span> }
 <span class="line-num">7</span> 
-<span class="line-num">8</span> <span class="comment"># Ready to build great things</span></code></pre>
+<span class="line-num">8</span> <span class="comment"># Let's build your next project together</span></code></pre>
                         </div>
                     </div>
                 </div>
@@ -330,8 +319,8 @@
         <!-- Experience & Education -->
         <section id="experience" class="section">
             <div class="section-header">
-                <div class="overline">— Academic Journey</div>
-                <h2 class="section-title">Academic Evolution</h2>
+                <div class="overline">— Growth & Experience</div>
+                <h2 class="section-title">Where I've been.<br><span class="text-muted">What I've learned.</span></h2>
             </div>
             
             <div class="experience-grid mt-5">
@@ -342,10 +331,10 @@
                         <div class="timeline-row">
                             <div class="timeline-date">Butuan City</div>
                             <div class="timeline-info">
-                                <h4>IT Programmer - The Potter's House by Chinyu</h4>
-                                <p class="timeline-short">Developed a comprehensive inventory management system to track products and streamline daily stock operations.</p>
+                                <h4>IT Intern & Web Developer - The Potter's House by Chinyu</h4>
+                                <p class="timeline-short">Built a complete web-based inventory and procurement system that replaced the company's manual tracking and saved hours of work every week.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Implemented digital Purchase Order (PO) and Purchase Request (PR) workflows to improve procurement efficiency and speed. Built data visualization dashboards to show transaction trends and distribution, aiding management in business decision-making. Created activity logging features to monitor inventory movements and ensure operational accountability. Collaborated with staff to understand their workflow needs and deliver a centralized platform that significantly reduces manual errors.</p>
+                                    <p class="timeline-desc">The company was losing time and money tracking inventory on paper. I stepped in and built a full web platform using Django and MySQL that digitized their entire workflow. Staff can now check stock levels, create purchase requests, approve orders, and track every transaction in real time. I also designed visual dashboards with Chart.js so owners can see exactly how their business is performing. The result: fewer mistakes, faster decisions, and a system the team actually enjoys using every day.</p>
                                 </div>
                             </div>
                         </div>
@@ -354,9 +343,9 @@
                             <div class="timeline-date">Butuan City</div>
                             <div class="timeline-info">
                                 <h4>Trainer - PyBalanghay Organization</h4>
-                                <p class="timeline-short">Conducted hands-on technical workshops for college peers, breaking down complex programming concepts into practical, easy-to-understand lessons.</p>
+                                <p class="timeline-short">Taught Python programming and web development to college students and high school learners through hands-on workshops and one-on-one mentoring.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Spearheaded community outreach programs, introducing local high school students to foundational coding skills and technology through interactive training sessions. Developed training materials, presentations, and coding exercises designed to accommodate and engage learners of varying technical backgrounds. Mentored students during live coding activities, providing real-time troubleshooting and fostering a highly collaborative learning environment.</p>
+                                    <p class="timeline-desc">I didn't just lecture — I taught by doing. I designed custom training materials, coding exercises, and real projects that helped students go from zero to building their own apps. I led workshops for my college classmates and visited high schools to teach younger students the basics of coding. I also mentored students one-on-one, helping them debug their code and stay motivated. The workshops were successful enough that I was officially recognized with a Trainer award by the organization.</p>
                                 </div>
                             </div>
                         </div>
@@ -367,7 +356,7 @@
                                 <h4>President - EGF Organization</h4>
                                 <p class="timeline-short">Directed the campus chapter of the EGF-New Life a Roman Catholic community, aligning all student activities and outreach with the core vision of "Winning, Witnessing, and Working with Christ."</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Facilitated mentorship and spiritual growth programs, guiding peers through spiritual development and helping them transform from their old lives to a renewed sense of purpose to Christ Jesus. Organized and led community gatherings, prayer meetings, and campus events to build a strong, supportive, and welcoming environment for students. Managed the organization's daily operations, overseeing schedules, communications, and student engagement while serving as the primary bridge to the main EGF-New Life Community in Butuan City.</p>
+                                    <p class="timeline-desc">As the leader of our student organization, I managed all our daily work and coordinated large events on campus. I focused on building a supportive community where students could grow and help each other. I handled all the schedules, communicated with our members, and worked closely with local leaders to make sure our outreach programs were successful and well-organized.</p>
                                 </div>
                             </div>
                         </div>
@@ -382,7 +371,7 @@
                                 <h4>PyBalanghay Org Extension Service</h4>
                                 <p class="timeline-short">Libertad National High School.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Served as a trainer for the community extension program, teaching high school students on Basic Python Programming Language with Tkinter.</p>
+                                    <p class="timeline-desc">Volunteered as a trainer for the community extension program, teaching high school students the basics of Python programming with Tkinter. I helped students with no coding experience write their first programs and see their code come to life on screen.</p>
                                 </div>
                             </div>
                         </div>
@@ -393,7 +382,7 @@
                                 <h4>PyBalanghay Org Extension Service</h4>
                                 <p class="timeline-short">Taligaman National High School.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Served as a trainer for the community extension program, teaching ICT students the fundamentals of Python programming.</p>
+                                    <p class="timeline-desc">Volunteered as a trainer for the community extension program, teaching ICT students how to think like programmers using Python. I designed hands-on exercises that made coding fun and accessible for beginners.</p>
                                 </div>
                             </div>
                         </div>
@@ -445,7 +434,7 @@
                                 <h4>PyBalanghay Organization Workshop</h4>
                                 <p class="timeline-short">Trainer & Associate Trainer.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Honored for invaluable efforts as a Trainer for "Basic Python Programming Language with Tkinter" and recognized for selfless dedication as an Associate Trainer for "Basic Web Development Using Python Flask" at ACLC College.</p>
+                                    <p class="timeline-desc">Received official recognition for my work as a Trainer for "Basic Python Programming with Tkinter" and as an Associate Trainer for "Basic Web Development Using Python Flask" at ACLC College. I spent many hours creating lessons, preparing exercises, and helping my peers understand how to build their own applications from scratch.</p>
                                 </div>
                             </div>
                         </div>
@@ -456,7 +445,7 @@
                                 <h4>HACKFORGOV: Capture-the-flag</h4>
                                 <p class="timeline-short">DICT Caraga regional competition on Cybersecurity.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Actively participated in the regional competition focused on the theme, "Today's Generation, Tomorrow's Champion: Shaping the Future of Cybersecurity through Shared Responsibility."</p>
+                                    <p class="timeline-desc">Competed in a large regional cybersecurity competition where I learned how to protect systems from hackers. It was a great experience that taught me about the importance of shared responsibility in making the internet safer for everyone.</p>
                                 </div>
                             </div>
                         </div>
@@ -467,7 +456,7 @@
                                 <h4>PSITE ICT Student Congress 2024</h4>
                                 <p class="timeline-short">Programming Contest and ICT Congress.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Participated in the Programming Contest and engaged with industry leaders to explore emerging trends in ICT and contribute to meaningful discussions on technology's future.</p>
+                                    <p class="timeline-desc">Participated in a regional programming contest and met with technology leaders to learn about the future of the IT industry. I explored new tools and talked about how technology can solve real-world problems.</p>
                                 </div>
                             </div>
                         </div>
@@ -478,7 +467,7 @@
                                 <h4>ACLC Community Extension Service</h4>
                                 <p class="timeline-short">Facilitator at Bancasi Integrated School.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Received recognition for exceptional dedication as a Facilitator for the "Empowering Students Through Digital Knowledge" initiative.</p>
+                                    <p class="timeline-desc">Received recognition for my dedication as a Facilitator in the "Empowering Students Through Digital Knowledge" initiative. I helped young students gain confidence with technology and digital tools through interactive, beginner-friendly sessions.</p>
                                 </div>
                             </div>
                         </div>
@@ -493,7 +482,7 @@
                                 <h4>ACLC Community Service</h4>
                                 <p class="timeline-short">Empowering Students through Digital Knowledge.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Participated in the "Empowering Students through Digital Knowledge" ACLC Community Service initiative.</p>
+                                    <p class="timeline-desc">Participated in a community service initiative focused on teaching digital literacy to students. I helped facilitate hands-on sessions that gave young learners the confidence to use technology in their daily lives.</p>
                                 </div>
                             </div>
                         </div>
@@ -504,7 +493,7 @@
                                 <h4>Productivity Tools Training</h4>
                                 <p class="timeline-short">Workshop on Python & Adobe Photoshop.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Completed Productivity Tools Training and Workshop on Python Programming Language and Adobe Photoshop.</p>
+                                    <p class="timeline-desc">Completed hands-on training in Python programming and Adobe Photoshop. These workshops helped me sharpen my coding skills and gave me practical experience in graphic design tools that I still use today.</p>
                                 </div>
                             </div>
                         </div>
@@ -518,26 +507,30 @@
             <div class="section-inner">
                 <div class="section-header">
                     <div class="overline">— Contact</div>
-                    <h2 class="section-title">Let's build<br><span class="text-muted-dark">something great.</span></h2>
-                    <p class="hero-subtitle text-muted-dark" style="max-width: 500px; margin-top: 1rem;">Looking for a dedicated software developer to join your team?</p>
+                    <h2 class="section-title">Ready to work.<br><span class="text-muted-dark">Let's build something great.</span></h2>
+                    <p class="hero-subtitle text-muted-dark" style="max-width: 500px; margin-top: 1rem;">I'm available now and ready to start on your next project. Whether you need a full website, a web app, or someone to join your development team — let's talk.</p>
                 </div>
                 
                 <div class="contact-layout mt-2 ">
                     <div class="contact-content-col">
                         <div class="info-elements-minimal dark-version">    
                             <div class="info-item-minimal">
-                                <span class="info-label">Email</span>
-                                <a href="mailto:stephenavarra.work@gmail.com" class="info-value">stephenavarra.work@gmail.com</a>
+                                <span class="info-label"><i class="fa-solid fa-envelope"></i> Email</span>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stephenavarra.work@gmail.com" target="_blank" class="info-value">stephenavarra.work@gmail.com</a>
                             </div>
                             <div class="info-item-minimal">
-                                <span class="info-label">LinkedIn</span>
+                                <span class="info-label"><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
                                 <a href="https://www.linkedin.com/in/stephen-ceasar-navarra" target="_blank" rel="noopener noreferrer" class="info-value">linkedin.com/in/stephen-ceasar-navarra</a>
+                            </div>
+                            <div class="info-item-minimal">
+                                <span class="info-label"><i class="fa-brands fa-github"></i> GitHub</span>
+                                <a href="https://github.com/stphnvrra" target="_blank" rel="noopener noreferrer" class="info-value">github.com/stphnvrra</a>
                             </div>
                         </div>
 
                         <div class="contact-actions mt-5">
                             <div class="hero-actions">
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stephenavarra.work@gmail.com" target="_blank" class="btn primary-btn" style="background:#fff; color:#000; border-color:#fff;">Get in touch &rarr;</a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stephenavarra.work@gmail.com" target="_blank" class="btn primary-btn" style="background:#fff; color:#000; border-color:#fff;">Let's Talk &rarr;</a>
                                 <a href="{{ url_for('static', filename='files/Stephen-Ceasar-Navarra-Resume.pdf') }}" class="btn secondary-btn" style="background:transparent; color:#fff; border-color:#444;" download>Download Resume</a>
                             </div>
                         </div>

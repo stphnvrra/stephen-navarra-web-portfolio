@@ -27,4 +27,4 @@ Dedicated software developer with a strong commitment to continuous learning and
 - Conducted hands-on technical workshops for college peers on Python and web development.
 
 ---
-[Contact Me](mailto:stephenavarra.work@gmail.com) | [View Live Portfolio](https://stephenavarra.pythonanywhere.com/)
+[Contact Me](mailto:stephenavarra.work@gmail.com) | [View Live Portfolio](https://stephenavarra.pythonanywhere.com/profile)
