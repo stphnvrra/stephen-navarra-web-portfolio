@@ -1,30 +1,91 @@
-# Stephen Ceasar A. Navarra
-### Passionate Software Developer | Full-Stack Engineer
+# Stephen Ceasar Navarra
+### Web Developer | IT Programmer | IoT Enthusiast
 
-Dedicated software developer with a strong commitment to continuous learning and the development of impactful applications. Proficient in engineering both user-facing interfaces and robust backend architectures.
+I am a Web Developer based in Butuan City, Philippines, dedicated to building impactful digital solutions. I specialize in turning complex ideas into simple, professional tools, with expertise ranging from full-stack web development to mobile apps and IoT integration.
 
 ---
 
-## 🚀 Professional Profile
-- **Location:** Butuan City, Philippines
-- **Expertise:** Full-Stack Web Development, Mobile Development (React Native), Desktop Applications
-- **Specialization:** Management Systems, Data Visualization, and IoT Integration
+## 🛠 Technical Capabilities
 
-## 🛠 Technical Skills
+### **Web & Mobile Development**
+- **Frontend:** HTML5, CSS3, Bootstrap 5, React.js
+- **Backend:** Flask, Django, FastAPI
+- **Mobile:** React Native
+
+### **Programming & Databases**
 - **Languages:** Python, JavaScript, Java
-- **Web Technologies:** HTML5, CSS3, Flask, Django, React.js
-- **IoT & Hardware:** Raspberry Pi, Arduino, ESP32
 - **Databases:** MySQL, SQLite, Firebase, Supabase
-- **Workflow:** Git, UI/UX Design (Canva), Microsoft Office Suite
 
-## 💼 Featured Experience
-### IT Programmer | The Potter's House by Chinyu
-- Developed a comprehensive inventory management system to streamline daily stock operations.
-- Implemented digital Purchase Order (PO) and Purchase Request (PR) workflows.
-- Built data visualization dashboards to assist in business decision-making.
-
-### Trainer | PyBalanghay Organization
-- Conducted hands-on technical workshops for college peers on Python and web development.
+### **Hardware & Specialized Tools**
+- **IoT/Hardware:** Raspberry Pi, Arduino, ESP32, NodeMCU
+- **Libraries/Tools:** OpenCV, Mapbox, Git, Unity
+- **Design:** Canva
 
 ---
-[Contact Me](mailto:stephenavarra.work@gmail.com) | [View Live Portfolio](https://stephenavarra.pythonanywhere.com/profile)
+
+## 📂 Featured Projects
+
+### 1. **The Potter's House**
+*Inventory & Procurement Management System*
+- **Tech:** Django, MySQL, Bootstrap, Chart.js
+- **Impact:** Digitized manual paper-based tracking into a clean web dashboard for stock management, purchase requests, and automated cost calculation.
+
+### 2. **KickX E-commerce**
+*Sneaker Retail Platform with Recommendation Engine*
+- **Tech:** Flask, Supabase, PayPal SDK, Pandas/NumPy
+- **Impact:** Built a complete online store with a smart product recommendation system and secure payment integration.
+
+### 3. **SafeBite**
+*Android App for Crime-Safe Travel with AR Navigation*
+- **Tech:** React Native, FastAPI, Unity, Firebase, Mapbox
+- **Impact:** Developed a backend that calculates safe walking/driving routes based on crime data, featuring AR turn-by-turn directions.
+
+### 4. **LoKal AI Assistant**
+*Offline Educational Learning Assistant*
+- **Tech:** Django, SQLite, Ollama, Vosk, Raspberry Pi 4B
+- **Impact:** A fully offline AI chatbot running on a Raspberry Pi, creating its own Wi-Fi hotspot to serve students in areas without internet access.
+
+### 5. **PHQuest**
+*Philippine Discovery Quiz Game*
+- **Tech:** React Native, FastAPI, SQLite
+- **Impact:** An interactive mobile game with real-time global leaderboards and quests focused on Philippine history and culture.
+
+### 6. **Garbage Bot Picker**
+*Gesture-Controlled Robotic Vehicle*
+- **Tech:** Flask, OpenCV, NodeMCU, Raspberry Pi, ESP32-CAM
+- **Impact:** A physical robot responding to hand gestures via a live video stream, combining web control with real-world movement.
+
+---
+
+## 📈 Experience & Achievements
+
+### **Experience**
+- **IT Intern & Web Developer** | *The Potter's House by Chinyu* (Butuan City)
+  - Developed a full web-based inventory system saving hours of manual labor weekly.
+- **Trainer** | *PyBalanghay Organization*
+  - Designed and led workshops on Python and Flask for college and high school students.
+- **President** | *EGF Organization*
+  - Directed campus chapter activities and community outreach programs.
+
+### **Achievements**
+- **HACKFORGOV Competitor** (2024): Participated in regional cybersecurity competition by DICT.
+- **PSITE ICT Congress Participant** (2024): Engaged in regional programming contests and industry networking.
+- **Certified Trainer**: Recognized for teaching "Basic Python with Tkinter" and "Web Development with Flask."
+
+---
+
+## 🎓 Education
+- **BS Information Technology** (2022 - 2026)  
+  *ACLC College of Butuan*
+- **Senior High School** (2019 - 2021)  
+  *Ampayon National High School*
+
+---
+
+## 📫 Connect with Me
+- **Email:** [stephenavarra.work@gmail.com](mailto:stephenavarra.work@gmail.com)
+- **LinkedIn:** [linkedin.com/in/stephen-ceasar-navarra](https://www.linkedin.com/in/stephen-ceasar-navarra)
+- **GitHub:** [github.com/stphnvrra](https://github.com/stphnvrra)
+- **Live Portfolio:** [stephenavarra.pythonanywhere.com/profile](https://stephenavarra.pythonanywhere.com/profile)
+
+&copy; 2026 Stephen Ceasar Navarra. All rights reserved.
