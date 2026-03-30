@@ -74,14 +74,6 @@ I am a Web Developer based in Butuan City, Philippines, dedicated to building im
 
 ---
 
-## 🎓 Education
-- **BS Information Technology** (2022 - 2026)  
-  *ACLC College of Butuan*
-- **Senior High School** (2019 - 2021)  
-  *Ampayon National High School*
-
----
-
 ## 📫 Connect with Me
 - **Email:** [stephenavarra.work@gmail.com](mailto:stephenavarra.work@gmail.com)
 - **LinkedIn:** [linkedin.com/in/stephen-ceasar-navarra](https://www.linkedin.com/in/stephen-ceasar-navarra)
