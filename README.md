@@ -1,5 +1,5 @@
 # Stephen Ceasar Navarra
-# [stephenavarra.pythonanywhere.com/portfolio](https://stephenavarra.pythonanywhere.com/portfolio)
+[stephenavarra.pythonanywhere.com/portfolio](https://stephenavarra.pythonanywhere.com/portfolio)
 ### Web Developer | IT Programmer | IoT Enthusiast
 
 I am a Web Developer based in Butuan City, Philippines, dedicated to building impactful digital solutions. I specialize in turning complex ideas into simple, professional tools, with expertise ranging from full-stack web development to mobile apps and IoT integration.
