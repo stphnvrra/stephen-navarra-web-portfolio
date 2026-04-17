@@ -86,6 +86,6 @@ I am a Web Developer based in Butuan City, Philippines, dedicated to building im
 - **Email:** [stephenavarra.work@gmail.com](mailto:stephenavarra.work@gmail.com)
 - **LinkedIn:** [linkedin.com/in/stephen-ceasar-navarra](https://www.linkedin.com/in/stephen-ceasar-navarra)
 - **GitHub:** [github.com/stphnvrra](https://github.com/stphnvrra)
-- **Live Portfolio:** [stephenavarra.pythonanywhere.com/profile](https://stephenavarra.pythonanywhere.com/profile)
+- **Live Portfolio:** [stephenavarra.pythonanywhere.com/portfolio](https://stephenavarra.pythonanywhere.com/portfolio)
 
 &copy; 2026 Stephen Ceasar Navarra. All rights reserved.
