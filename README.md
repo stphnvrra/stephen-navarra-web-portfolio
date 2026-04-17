@@ -1,4 +1,5 @@
 # Stephen Ceasar Navarra
+[stephenavarra.pythonanywhere.com/portfolio](https://stephenavarra.pythonanywhere.com/portfolio)
 ### Web Developer | IT Programmer | IoT Enthusiast
 
 I am a Web Developer based in Butuan City, Philippines, dedicated to building impactful digital solutions. I specialize in turning complex ideas into simple, professional tools, with expertise ranging from full-stack web development to mobile apps and IoT integration.
@@ -71,14 +72,6 @@ I am a Web Developer based in Butuan City, Philippines, dedicated to building im
 - **HACKFORGOV Competitor** (2024): Participated in regional cybersecurity competition by DICT.
 - **PSITE ICT Congress Participant** (2024): Engaged in regional programming contests and industry networking.
 - **Certified Trainer**: Recognized for teaching "Basic Python with Tkinter" and "Web Development with Flask."
-
----
-
-## 🎓 Education
-- **BS Information Technology** (2022 - 2026)  
-  *ACLC College of Butuan*
-- **Senior High School** (2019 - 2021)  
-  *Ampayon National High School*
 
 ---
 
