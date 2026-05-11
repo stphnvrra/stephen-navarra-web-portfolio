@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STPHNVRR_ | Portfolio</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/profile_circle.png') }}">
     <!-- Using Inter for a very clean, minimalist Swiss-style look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-     <!-- Common Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Common Libraries -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body class="light-mode">
 
     <!-- Fluid Mesh Gradient Background (Glassmorphism base) -->
@@ -19,7 +23,7 @@
         <div class="mesh-blob blob-2"></div>
         <div class="mesh-blob blob-3"></div>
     </div>
-    
+
     <!-- Subtle grid background pattern -->
     <div class="grid-background"></div>
     <div class="animated-lines"></div>
@@ -53,7 +57,8 @@
             <div class="nav-actions">
                 <a href="#contact" class="btn primary-btn small-btn">Contact</a>
             </div>
-            <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.navbar').classList.toggle('nav-open')">
+            <button class="hamburger" aria-label="Menu"
+                onclick="document.querySelector('.navbar').classList.toggle('nav-open')">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -75,18 +80,27 @@
                 <div class="overline hero-overline">— Portfolio</div>
                 <div class="hero-text">
                     <h1 class="hero-title">Stephen Ceasar<br>Navarra</h1>
-                    <p class="hero-subtitle">I am a Web Developer who builds great websites that help your business grow and reach more people. While my main focus is web development, I also have strong skills in mobile apps and smart hardware (IoT). I turn complex ideas into simple, professional tools that get results. I handle everything from the first design to the final launch, making sure your project is fast, secure, and easy for everyone to use. Let’s work together to build a digital solution that makes your business stand out and run more smoothly.</p>
-                    
+                    <p class="hero-subtitle">I am a Web and Mobile App Developer and an IT graduate who enjoys building
+                        digital tools that make lives easier. I primarily focus on engineering full-stack platforms with
+                        Python (Django, Flask) and JavaScript, alongside developing smooth mobile applications in React
+                        Native. Beyond normal web builds, I’ve had the opportunity to bridge the physical and digital
+                        worlds by integrating specialized hardware and AI models. What drives me most is managing
+                        projects from an initial idea all the way through to launch, ensuring the final code is not just
+                        functional, but actually improves daily operations for users.</p>
+
                     <div class="hero-actions mt-3">
                         <a href="#projects" class="btn primary-btn">See What I've Built &rarr;</a>
                         <a href="#contact" class="btn secondary-btn">Hire Me</a>
-                        <a href="https://github.com/stphnvrra" target="_blank" rel="noopener noreferrer" class="btn secondary-btn"><i class="fa-brands fa-github"></i>&nbspGitHub</a>
+                        <a href="https://github.com/stphnvrra" target="_blank" rel="noopener noreferrer"
+                            class="btn secondary-btn"><i class="fa-brands fa-github"></i>&nbspGitHub</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
                     <!-- Subtle ascii/geometric art or image goes here -->
                     <div class="profile-img-container">
-                        <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Stephen Ceasar A. Navarra" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Stephen+Navarra&size=400&background=F7F7F7&color=000000'">
+                        <img src="{{ url_for('static', filename='images/profile.png') }}"
+                            alt="Stephen Ceasar A. Navarra" class="profile-img"
+                            onerror="this.src='https://ui-avatars.com/api/?name=Stephen+Navarra&size=400&background=F7F7F7&color=000000'">
                     </div>
                 </div>
             </div>
@@ -96,9 +110,10 @@
         <section id="skills" class="section">
             <div class="section-header">
                 <div class="overline">— What I Bring to the Table</div>
-                <h2 class="section-title">Skills that deliver results.<br><span class="text-muted">Tools that get the job done.</span></h2>
+                <h2 class="section-title">Skills that deliver results.<br><span class="text-muted">Tools that get the
+                        job done.</span></h2>
             </div>
-            
+
             <div class="skills-container mt-5">
                 <div class="feature-card">
                     <div class="feature-number">01</div>
@@ -126,7 +141,7 @@
                                 </div>
                                 <div class="info-item-minimal">
                                     <span class="info-label">Role</span>
-                                    <span class="info-value">Web Developer</span>
+                                    <span class="info-value">Web & Mobile App Developer</span>
                                 </div>
                                 <div class="info-item-minimal">
                                     <span class="info-label">Availability</span>
@@ -238,43 +253,60 @@
             <div class="section-inner">
                 <div class="section-header">
                     <div class="overline">— Real Work, Real Results</div>
-                    <h2 class="section-title">Projects I've built.<br><span class="text-muted">Problems I've solved.</span></h2>
+                    <h2 class="section-title">Projects I've built.<br><span class="text-muted">Problems I've
+                            solved.</span></h2>
                 </div>
-                
+
                 <div class="projects-layout mt-5">
                     <div class="projects-list">
                         <div class="project-item">
                             <div class="project-num">I</div>
                             <div class="project-details">
                                 <h3>The Potter's House</h3>
-                                <p class="project-tech">Inventory & Procurement Management System.<br>(Python (Django), MySQL, HTML/CSS, Bootstrap CSS, JavaScript (Chart.js))</p>
+                                <p class="project-tech">Inventory & Procurement Management System.<br>(Python (Django),
+                                    MySQL, HTML/CSS, Bootstrap CSS, JavaScript (Chart.js))</p>
                                 <div class="project-desc-wrapper">
                                     <div style="min-height: 0;">
-                                        <p class="project-desc">A real business needed a better way to manage their products and orders — so I built them one. Before my system, the staff tracked everything on paper, which led to costly errors. I created a clean web dashboard where they can check stock levels, manage purchase requests, approve orders, and calculate product costs automatically. I also added visual charts so the owners can instantly see sales trends and make smarter decisions. This project saved the business hours of manual work every week.</p>
+                                        <p class="project-desc">A real business needed a better way to manage their
+                                            products and orders — so I built them one. Before my system, the staff
+                                            tracked everything on paper, which led to costly errors. I created a clean
+                                            web dashboard where they can check stock levels, manage purchase requests,
+                                            approve orders, and calculate product costs automatically. I also added
+                                            visual charts so the owners can instantly see sales trends and make smarter
+                                            decisions. This project saved the business hours of manual work every week.
+                                        </p>
                                         <div class="project-gallery">
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/dashboard.png') }}" alt="Dashboard">
+                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/dashboard.png') }}"
+                                                    alt="Dashboard">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/inventory.png') }}" alt="Inventory">
+                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/inventory.png') }}"
+                                                    alt="Inventory">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/all_inventory_items.png') }}" alt="All Inventory Items">
+                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/all_inventory_items.png') }}"
+                                                    alt="All Inventory Items">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/purchase_request.png') }}" alt="Purchase Request">
+                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/purchase_request.png') }}"
+                                                    alt="Purchase Request">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/purchase_orders.png') }}" alt="Purchase Orders">
+                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/purchase_orders.png') }}"
+                                                    alt="Purchase Orders">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/employees.png') }}" alt="Employees">
+                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/employees.png') }}"
+                                                    alt="Employees">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/inventory_logs.png') }}" alt="Inventory Logs">
+                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/inventory_logs.png') }}"
+                                                    alt="Inventory Logs">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/products.png') }}" alt="Products">
+                                                <img src="{{ url_for('static', filename='images/Projects/the_potters_house/products.png') }}"
+                                                    alt="Products">
                                             </a>
                                         </div>
                                     </div>
@@ -285,37 +317,55 @@
                             <div class="project-num">II</div>
                             <div class="project-details">
                                 <h3>KickX E-commerce</h3>
-                                <p class="project-tech">Sneaker Retail Platform with Recommendation Engine.<br>(Python (Flask), Supabase, HTML/CSS, Bootstrap 5, JavaScript (PayPal SDK), Data Analysis (Pandas/NumPy))</p>
+                                <p class="project-tech">Sneaker Retail Platform with Recommendation Engine.<br>(Python
+                                    (Flask), Supabase, HTML/CSS, Bootstrap 5, JavaScript (PayPal SDK), Data Analysis
+                                    (Pandas/NumPy))</p>
                                 <div class="project-desc-wrapper">
                                     <div style="min-height: 0;">
-                                        <p class="project-desc">I built a complete online store from the ground up where users can browse sneakers, add them to their cart, save favorites to a wishlist, and pay safely through PayPal. What makes this store special is the smart recommendation system I created — it tracks what's popular and suggests the right products to each user, which helps drive more sales. The store owner also gets an admin panel to manage products, view orders, and track everything in one place. This project shows I can build e-commerce solutions that actually sell.</p>
+                                        <p class="project-desc">I built a complete online store from the ground up where
+                                            users can browse sneakers, add them to their cart, save favorites to a
+                                            wishlist, and pay safely through PayPal. What makes this store special is
+                                            the smart recommendation system I created — it tracks what's popular and
+                                            suggests the right products to each user, which helps drive more sales. The
+                                            store owner also gets an admin panel to manage products, view orders, and
+                                            track everything in one place. This project shows I can build e-commerce
+                                            solutions that actually sell.</p>
                                         <div class="project-gallery">
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/01_homepage.png') }}" alt="Homepage">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/01_homepage.png') }}"
+                                                    alt="Homepage">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/02_admin_dashboard.png') }}" alt="Admin Dashboard">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/02_admin_dashboard.png') }}"
+                                                    alt="Admin Dashboard">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/03_admin_products.png') }}" alt="Admin Products">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/03_admin_products.png') }}"
+                                                    alt="Admin Products">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/04_admin_orders.png') }}" alt="Admin Orders">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/04_admin_orders.png') }}"
+                                                    alt="Admin Orders">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/05_admin_users.png') }}" alt="Admin Users">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/05_admin_users.png') }}"
+                                                    alt="Admin Users">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/06_recommendation_engine.png') }}" alt="Recommendation Engine">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/06_recommendation_engine.png') }}"
+                                                    alt="Recommendation Engine">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/07_product_catalog.png') }}" alt="Product Catalog">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/07_product_catalog.png') }}"
+                                                    alt="Product Catalog">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/08_product_detail.png') }}" alt="Product Detail">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/08_product_detail.png') }}"
+                                                    alt="Product Detail">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/09_shopping_cart.png') }}" alt="Shopping Cart">
+                                                <img src="{{ url_for('static', filename='images/Projects/kickx_ecommerce/09_shopping_cart.png') }}"
+                                                    alt="Shopping Cart">
                                             </a>
                                         </div>
                                     </div>
@@ -325,32 +375,51 @@
                         <div class="project-item">
                             <div class="project-num" style="height: 80px; display: flex; align-items: center;">III</div>
                             <div class="project-details">
-                                <div class="project-title-wrapper" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+                                <div class="project-title-wrapper"
+                                    style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
                                     <h3 style="margin: 0">SafeBite</h3>
-                                    <img src="{{ url_for('static', filename='images/best_research_badge.png') }}" alt="Best Research Paper Badge" title="Best Research Paper" style="height: 80px; width: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                                    <img src="{{ url_for('static', filename='images/best_research_badge.png') }}"
+                                        alt="Best Research Paper Badge" title="Best Research Paper"
+                                        style="height: 80px; width: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
                                 </div>
-                                <p class="project-tech">Android Application for Crime-Safe Travel with AR Navigation. (React Native, Python (FastAPI), Unity, Firebase, Mapbox)</p>
+                                <p class="project-tech">Android Application for Crime-Safe Travel with AR Navigation.
+                                    (React Native, Python (FastAPI), Unity, Firebase, Mapbox)</p>
                                 <div class="project-desc-wrapper">
                                     <div style="min-height: 0;">
-                                        <p class="project-desc">SafeBite is my Capstone Project that was recognized as the Best Research Paper. We developed it because safety is a real problem for people traveling in unfamiliar areas. Our team built SafeBite to solve that — it uses crime data to find the safest walking or driving routes to nearby restaurants. The app's best feature is its AR navigation, which overlays turn-by-turn directions on your phone's camera so you never get lost. I was responsible for building the backend server that handles all the map data, user routes, and safety calculations quickly and securely. This project proves I can work with complex data and deliver apps that truly help people.</p>
+                                        <p class="project-desc">SafeBite is my Capstone Project that was recognized as
+                                            the Best Research Paper. We developed it because safety is a real problem
+                                            for people traveling in unfamiliar areas. Our team built SafeBite to solve
+                                            that — it uses crime data to find the safest walking or driving routes to
+                                            nearby restaurants. The app's best feature is its AR navigation, which
+                                            overlays turn-by-turn directions on your phone's camera so you never get
+                                            lost. I was responsible for building the backend server that handles all the
+                                            map data, user routes, and safety calculations quickly and securely. This
+                                            project proves I can work with complex data and deliver apps that truly help
+                                            people.</p>
                                         <div class="project-gallery">
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_login.png') }}" alt="Login Screen">
+                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_login.png') }}"
+                                                    alt="Login Screen">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_heatmap.png') }}" alt="Detailed City Map">
+                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_heatmap.png') }}"
+                                                    alt="Detailed City Map">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_search.png') }}" alt="Restaurant Search">
+                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_search.png') }}"
+                                                    alt="Restaurant Search">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_route.png') }}" alt="Safe Route">
+                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_route.png') }}"
+                                                    alt="Safe Route">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_ar_navigation.png') }}" alt="AR Navigation">
+                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_ar_navigation.png') }}"
+                                                    alt="AR Navigation">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_poblacion_zoom.png') }}" alt="Crime Heatmap">
+                                                <img src="{{ url_for('static', filename='images/Projects/safebite/safebite_poblacion_zoom.png') }}"
+                                                    alt="Crime Heatmap">
                                             </a>
                                         </div>
                                     </div>
@@ -361,25 +430,38 @@
                             <div class="project-num">IV</div>
                             <div class="project-details">
                                 <h3>LoKal AI Assistant</h3>
-                                <p class="project-tech">Offline Educational AI Learning Assistant.<br>(Python (Django), JavaScript, HTML/CSS, SQLite, Ollama, Vosk, Raspberry Pi 4B)</p>
+                                <p class="project-tech">Offline Educational AI Learning Assistant.<br>(Python (Django),
+                                    JavaScript, HTML/CSS, SQLite, Ollama, Vosk, Raspberry Pi 4B)</p>
                                 <div class="project-desc-wrapper">
                                     <div style="min-height: 0;">
-                                        <p class="project-desc">Many students in the Philippines don't have internet access, but they still deserve great learning tools. I built LoKal AI to solve this — it runs entirely offline on a small Raspberry Pi computer and hosts a smart AI chatbot that answers study questions anytime. The system even creates its own Wi-Fi hotspot automatically, so students just connect their phones and start learning with zero setup. This project shows I can build complete systems that work in the most challenging environments, not just perfect lab conditions.</p>
+                                        <p class="project-desc">Many students in the Philippines don't have internet
+                                            access, but they still deserve great learning tools. I built LoKal AI to
+                                            solve this — it runs entirely offline on a small Raspberry Pi computer and
+                                            hosts a smart AI chatbot that answers study questions anytime. The system
+                                            even creates its own Wi-Fi hotspot automatically, so students just connect
+                                            their phones and start learning with zero setup. This project shows I can
+                                            build complete systems that work in the most challenging environments, not
+                                            just perfect lab conditions.</p>
                                         <div class="project-gallery">
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/01_dashboard.png') }}" alt="Main Dashboard">
+                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/01_dashboard.png') }}"
+                                                    alt="Main Dashboard">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/02_login.png') }}" alt="Login Screen">
+                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/02_login.png') }}"
+                                                    alt="Login Screen">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/03_registration.png') }}" alt="Create Account">
+                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/03_registration.png') }}"
+                                                    alt="Create Account">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/04_chat_interface.png') }}" alt="Chat Interface">
+                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/04_chat_interface.png') }}"
+                                                    alt="Chat Interface">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/05_voice_search.png') }}" alt="Voice Input">
+                                                <img src="{{ url_for('static', filename='images/Projects/raspi_lokal/05_voice_search.png') }}"
+                                                    alt="Voice Input">
                                             </a>
                                         </div>
                                     </div>
@@ -390,28 +472,42 @@
                             <div class="project-num">V</div>
                             <div class="project-details">
                                 <h3>PHQuest</h3>
-                                <p class="project-tech">Philippine Discovery Quiz Game.<br>(React Native, Python (FastAPI), SQLite)</p>
+                                <p class="project-tech">Philippine Discovery Quiz Game.<br>(React Native, Python
+                                    (FastAPI), SQLite)</p>
                                 <div class="project-desc-wrapper">
                                     <div style="min-height: 0;">
-                                        <p class="project-desc">I wanted to help people learn about Philippine history and culture in a way that's actually fun. PHQuest is an interactive mobile game where players complete quests and quizzes about the country's geography, history, and traditions. I built a real-time global leaderboard so players can compete with each other, plus a detailed performance tracker that shows how much they've learned. The full backend server handles all user data, scoring, and rankings. It proves I can build engaging mobile experiences with solid backend systems.</p>
+                                        <p class="project-desc">I wanted to help people learn about Philippine history
+                                            and culture in a way that's actually fun. PHQuest is an interactive mobile
+                                            game where players complete quests and quizzes about the country's
+                                            geography, history, and traditions. I built a real-time global leaderboard
+                                            so players can compete with each other, plus a detailed performance tracker
+                                            that shows how much they've learned. The full backend server handles all
+                                            user data, scoring, and rankings. It proves I can build engaging mobile
+                                            experiences with solid backend systems.</p>
                                         <div class="project-gallery">
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/01_login.png') }}" alt="Login Screen">
+                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/01_login.png') }}"
+                                                    alt="Login Screen">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/02_lobby.png') }}" alt="Game Lobby">
+                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/02_lobby.png') }}"
+                                                    alt="Game Lobby">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/03_quests.png') }}" alt="Quest Selection">
+                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/03_quests.png') }}"
+                                                    alt="Quest Selection">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/04_gameplay.png') }}" alt="Battle Screen">
+                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/04_gameplay.png') }}"
+                                                    alt="Battle Screen">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/05_leaderboard.png') }}" alt="Leaderboard">
+                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/05_leaderboard.png') }}"
+                                                    alt="Leaderboard">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/06_stats.png') }}" alt="Player Stats">
+                                                <img src="{{ url_for('static', filename='images/Projects/phquest_game/06_stats.png') }}"
+                                                    alt="Player Stats">
                                             </a>
                                         </div>
                                     </div>
@@ -422,22 +518,33 @@
                             <div class="project-num">VI</div>
                             <div class="project-details">
                                 <h3>Garbage Bot Picker</h3>
-                                <p class="project-tech">Gesture-Controlled Robotic Vehicle.<br>(Python (Flask, OpenCV), NodeMCU, MPU6050, Raspberry Pi (GPIO), ESP32-CAM, TCP/IP Sockets)</p>
+                                <p class="project-tech">Gesture-Controlled Robotic Vehicle.<br>(Python (Flask, OpenCV),
+                                    NodeMCU, MPU6050, Raspberry Pi (GPIO), ESP32-CAM, TCP/IP Sockets)</p>
                                 <div class="project-desc-wrapper">
                                     <div style="min-height: 0;">
-                                        <p class="project-desc">This project combined web development with robotics. I programmed a vehicle that responds to hand gestures in real time — tilt your hand forward and it drives forward, rotate it and the arm grabs objects. It streams live video from an onboard camera so you can see exactly what the robot sees. I built the Flask web server that connects the sensors to the motors and handles the video feed. This project proves I can work beyond just websites and bring code into the physical world when needed.</p>
+                                        <p class="project-desc">This project combined web development with robotics. I
+                                            programmed a vehicle that responds to hand gestures in real time — tilt your
+                                            hand forward and it drives forward, rotate it and the arm grabs objects. It
+                                            streams live video from an onboard camera so you can see exactly what the
+                                            robot sees. I built the Flask web server that connects the sensors to the
+                                            motors and handles the video feed. This project proves I can work beyond
+                                            just websites and bring code into the physical world when needed.</p>
                                         <div class="project-gallery">
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/garbage_bot_picker/01_robotic_vehicle.png') }}" alt="Robotic Vehicle">
+                                                <img src="{{ url_for('static', filename='images/Projects/garbage_bot_picker/01_robotic_vehicle.png') }}"
+                                                    alt="Robotic Vehicle">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/garbage_bot_picker/02_developer_demo.png') }}" alt="Developer">
+                                                <img src="{{ url_for('static', filename='images/Projects/garbage_bot_picker/02_developer_demo.png') }}"
+                                                    alt="Developer">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/garbage_bot_picker/03_system_architecture.png') }}" alt="System Architecture">
+                                                <img src="{{ url_for('static', filename='images/Projects/garbage_bot_picker/03_system_architecture.png') }}"
+                                                    alt="System Architecture">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='images/Projects/garbage_bot_picker/04_hardware_components.png') }}" alt="Hardware Components">
+                                                <img src="{{ url_for('static', filename='images/Projects/garbage_bot_picker/04_hardware_components.png') }}"
+                                                    alt="Hardware Components">
                                             </a>
                                         </div>
                                     </div>
@@ -445,17 +552,17 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="project-visual-mockup">
                         <div class="mockup-header">
                             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
                             <span class="mockup-title">developer.py</span>
                         </div>
                         <div class="mockup-body">
-<pre><code><span class="line-num">1</span> <span class="method">developer</span> = {
+                            <pre><code><span class="line-num">1</span> <span class="method">developer</span> = {
 <span class="line-num">2</span>   <span class="key">"name"</span>: <span class="string">"Stephen Ceasar Navarra"</span>,
 <span class="line-num">3</span>   <span class="key">"education"</span>: <span class="string">"BS Information Technology"</span>,
-<span class="line-num">4</span>   <span class="key">"roles"</span>: [<span class="string">"Web Developer"</span>, <span class="string">"IT Programmer"</span>],
+<span class="line-num">4</span>   <span class="key">"roles"</span>: [<span class="string">"Web & Mobile App Developer"</span>, <span class="string">"IT Programmer"</span>],
 <span class="line-num">5</span>   <span class="key">"status"</span>: <span class="string">"Available Now — Let's Talk"</span>
 <span class="line-num">6</span> }
 <span class="line-num">7</span> 
@@ -472,40 +579,58 @@
                 <div class="overline">— Growth & Experience</div>
                 <h2 class="section-title">Where I've been.<br><span class="text-muted">What I've learned.</span></h2>
             </div>
-            
+
             <div class="experience-grid mt-5">
                 <div class="timeline-column">
                     <div class="timeline-minimal" style="margin-bottom: 3rem;">
                         <h3 class="subsection-title">Experience</h3>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">Butuan City</div>
                             <div class="timeline-info">
                                 <h4>IT Intern & Web Developer - The Potter's House by Chinyu</h4>
-                                <p class="timeline-short">Built a complete web-based inventory and procurement system that replaced the company's manual tracking and saved hours of work every week.</p>
+                                <p class="timeline-short">Built a complete web-based inventory and procurement system
+                                    that replaced the company's manual tracking and saved hours of work every week.</p>
                                 <div class="timeline-desc-wrapper">
                                     <div style="min-height: 0;">
-                                        <p class="timeline-desc">The company was losing time and money tracking inventory on paper. I stepped in and built a full web platform using Django and MySQL that digitized their entire workflow. Staff can now check stock levels, create purchase requests, approve orders, and track every transaction in real time. I also designed visual dashboards with Chart.js so owners can see exactly how their business is performing. The result: fewer mistakes, faster decisions, and a system the team actually enjoys using every day.</p>
+                                        <p class="timeline-desc">The company was losing time and money tracking
+                                            inventory on paper. I stepped in and built a full web platform using Django
+                                            and MySQL that digitized their entire workflow. Staff can now check stock
+                                            levels, create purchase requests, approve orders, and track every
+                                            transaction in real time. I also designed visual dashboards with Chart.js so
+                                            owners can see exactly how their business is performing. The result: fewer
+                                            mistakes, faster decisions, and a system the team actually enjoys using
+                                            every day.</p>
                                         <div class="project-gallery mt-3">
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='experiences/it_intern/Certificate_of_Completion_OJT.jpg') }}" alt="Certificate of Completion OJT">
+                                                <img src="{{ url_for('static', filename='experiences/it_intern/Certificate_of_Completion_OJT.jpg') }}"
+                                                    alt="Certificate of Completion OJT">
                                             </a>
                                             <a href="#">
-                                                <img src="{{ url_for('static', filename='experiences/it_intern/giving_of_certificate.jpg') }}" alt="Giving of Certificate">
+                                                <img src="{{ url_for('static', filename='experiences/it_intern/giving_of_certificate.jpg') }}"
+                                                    alt="Giving of Certificate">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">Butuan City</div>
                             <div class="timeline-info">
                                 <h4>Trainer - PyBalanghay Organization</h4>
-                                <p class="timeline-short">Taught Python programming and web development to college students and high school learners through hands-on workshops and one-on-one mentoring.</p>
+                                <p class="timeline-short">Taught Python programming and web development to college
+                                    students and high school learners through hands-on workshops and one-on-one
+                                    mentoring.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">I didn't just lecture — I taught by doing. I designed custom training materials, coding exercises, and real projects that helped students go from zero to building their own apps. I led workshops for my college classmates and visited high schools to teach younger students the basics of coding. I also mentored students one-on-one, helping them debug their code and stay motivated. The workshops were successful enough that I was officially recognized with a Trainer award by the organization.</p>
+                                    <p class="timeline-desc">I didn't just lecture — I taught by doing. I designed
+                                        custom training materials, coding exercises, and real projects that helped
+                                        students go from zero to building their own apps. I led workshops for my college
+                                        classmates and visited high schools to teach younger students the basics of
+                                        coding. I also mentored students one-on-one, helping them debug their code and
+                                        stay motivated. The workshops were successful enough that I was officially
+                                        recognized with a Trainer award by the organization.</p>
                                 </div>
                             </div>
                         </div>
@@ -514,71 +639,92 @@
                             <div class="timeline-date">Butuan City</div>
                             <div class="timeline-info">
                                 <h4>President - EGF Organization</h4>
-                                <p class="timeline-short">Directed the campus chapter of the EGF-New Life a Roman Catholic community, aligning all student activities and outreach with the core vision of "Winning, Witnessing, and Working with Christ."</p>
+                                <p class="timeline-short">Directed the campus chapter of the EGF-New Life a Roman
+                                    Catholic community, aligning all student activities and outreach with the core
+                                    vision of "Winning, Witnessing, and Working with Christ."</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">As the leader of our student organization, I managed all our daily work and coordinated large events on campus. I focused on building a supportive community where students could grow and help each other. I handled all the schedules, communicated with our members, and worked closely with local leaders to make sure our outreach programs were successful and well-organized.</p>
+                                    <p class="timeline-desc">As the leader of our student organization, I managed all
+                                        our daily work and coordinated large events on campus. I focused on building a
+                                        supportive community where students could grow and help each other. I handled
+                                        all the schedules, communicated with our members, and worked closely with local
+                                        leaders to make sure our outreach programs were successful and well-organized.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="timeline-minimal" style="margin-bottom: 3rem;">
                         <h3 class="subsection-title">Volunteer Work</h3>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">Feb 2025</div>
                             <div class="timeline-info">
                                 <h4>PyBalanghay Org Extension Service</h4>
                                 <p class="timeline-short">Libertad National High School.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Volunteered as a trainer for the community extension program, teaching high school students the basics of Python programming with Tkinter. I helped students with no coding experience write their first programs and see their code come to life on screen.</p>
+                                    <p class="timeline-desc">Volunteered as a trainer for the community extension
+                                        program, teaching high school students the basics of Python programming with
+                                        Tkinter. I helped students with no coding experience write their first programs
+                                        and see their code come to life on screen.</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">Mar 2025</div>
                             <div class="timeline-info">
                                 <h4>PyBalanghay Org Extension Service</h4>
                                 <p class="timeline-short">Taligaman National High School.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Volunteered as a trainer for the community extension program, teaching ICT students how to think like programmers using Python. I designed hands-on exercises that made coding fun and accessible for beginners.</p>
+                                    <p class="timeline-desc">Volunteered as a trainer for the community extension
+                                        program, teaching ICT students how to think like programmers using Python. I
+                                        designed hands-on exercises that made coding fun and accessible for beginners.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="timeline-minimal">
                         <h3 class="subsection-title">Education</h3>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">2022 - 2026</div>
                             <div class="timeline-info">
                                 <h4>BS Information Technology</h4>
-                                <p>ACLC College Of Butuan<br><span style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan, Philippines</span></p>
+                                <p>ACLC College Of Butuan<br><span
+                                        style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan,
+                                        Philippines</span></p>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">2019 - 2021</div>
                             <div class="timeline-info">
                                 <h4>Senior High School</h4>
-                                <p>Ampayon National High School<br><span style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan, Philippines</span></p>
+                                <p>Ampayon National High School<br><span
+                                        style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan,
+                                        Philippines</span></p>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">2015 - 2019</div>
                             <div class="timeline-info">
                                 <h4>Junior High School</h4>
-                                <p>Ampayon National High School<br><span style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan, Philippines</span></p>
+                                <p>Ampayon National High School<br><span
+                                        style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan,
+                                        Philippines</span></p>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">2009 - 2015</div>
                             <div class="timeline-info">
                                 <h4>Elementary</h4>
-                                <p>Ampayon Central High School<br><span style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan, Philippines</span></p>
+                                <p>Ampayon Central High School<br><span
+                                        style="font-size: 0.85rem; color: var(--text-muted-light);">Butuan,
+                                        Philippines</span></p>
                             </div>
                         </div>
                     </div>
@@ -587,14 +733,18 @@
                 <div class="timeline-column">
                     <div class="timeline-minimal" style="margin-bottom: 3rem;">
                         <h3 class="subsection-title">Achievements</h3>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">Nov 2024</div>
                             <div class="timeline-info">
                                 <h4>PyBalanghay Organization Workshop</h4>
                                 <p class="timeline-short">Trainer & Associate Trainer.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Received official recognition for my work as a Trainer for "Basic Python Programming with Tkinter" and as an Associate Trainer for "Basic Web Development Using Python Flask" at ACLC College. I spent many hours creating lessons, preparing exercises, and helping my peers understand how to build their own applications from scratch.</p>
+                                    <p class="timeline-desc">Received official recognition for my work as a Trainer for
+                                        "Basic Python Programming with Tkinter" and as an Associate Trainer for "Basic
+                                        Web Development Using Python Flask" at ACLC College. I spent many hours creating
+                                        lessons, preparing exercises, and helping my peers understand how to build their
+                                        own applications from scratch.</p>
                                 </div>
                             </div>
                         </div>
@@ -605,18 +755,23 @@
                                 <h4>HACKFORGOV: Capture-the-flag</h4>
                                 <p class="timeline-short">DICT Caraga regional competition on Cybersecurity.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Competed in a large regional cybersecurity competition where I learned how to protect systems from hackers. It was a great experience that taught me about the importance of shared responsibility in making the internet safer for everyone.</p>
+                                    <p class="timeline-desc">Competed in a large regional cybersecurity competition
+                                        where I learned how to protect systems from hackers. It was a great experience
+                                        that taught me about the importance of shared responsibility in making the
+                                        internet safer for everyone.</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">May 2024</div>
                             <div class="timeline-info">
                                 <h4>PSITE ICT Student Congress 2024</h4>
                                 <p class="timeline-short">Programming Contest and ICT Congress.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Participated in a regional programming contest and met with technology leaders to learn about the future of the IT industry. I explored new tools and talked about how technology can solve real-world problems.</p>
+                                    <p class="timeline-desc">Participated in a regional programming contest and met with
+                                        technology leaders to learn about the future of the IT industry. I explored new
+                                        tools and talked about how technology can solve real-world problems.</p>
                                 </div>
                             </div>
                         </div>
@@ -627,7 +782,10 @@
                                 <h4>ACLC Community Extension Service</h4>
                                 <p class="timeline-short">Facilitator at Bancasi Integrated School.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Received recognition for my dedication as a Facilitator in the "Empowering Students Through Digital Knowledge" initiative. I helped young students gain confidence with technology and digital tools through interactive, beginner-friendly sessions.</p>
+                                    <p class="timeline-desc">Received recognition for my dedication as a Facilitator in
+                                        the "Empowering Students Through Digital Knowledge" initiative. I helped young
+                                        students gain confidence with technology and digital tools through interactive,
+                                        beginner-friendly sessions.</p>
                                 </div>
                             </div>
                         </div>
@@ -635,25 +793,33 @@
 
                     <div class="timeline-minimal" style="margin-top: 122px;">
                         <h3 class="subsection-title">Workshops & Seminars</h3>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">Jun - Jul 2025</div>
                             <div class="timeline-info">
                                 <h4>Summer Coding Bootcamp 2025</h4>
                                 <p class="timeline-short">Innovation Through Coding: For Real-World Impact.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Successfully completed an intensive month-long training program at ACLC College of Butuan. The bootcamp provided deep dives into Git & GitHub, Basic Programming, Advanced Mobile Development, Software Testing Tools, Database Management, and Application Programming Interface (API) Training. This experience sharpened my ability to build practical, scalable, and impactful digital solutions.</p>
+                                    <p class="timeline-desc">Successfully completed an intensive month-long training
+                                        program at ACLC College of Butuan. The bootcamp provided deep dives into Git &
+                                        GitHub, Basic Programming, Advanced Mobile Development, Software Testing Tools,
+                                        Database Management, and Application Programming Interface (API) Training. This
+                                        experience sharpened my ability to build practical, scalable, and impactful
+                                        digital solutions.</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-row">
                             <div class="timeline-date">May 2024</div>
                             <div class="timeline-info">
                                 <h4>ACLC Community Service</h4>
                                 <p class="timeline-short">Empowering Students through Digital Knowledge.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Participated in a community service initiative focused on teaching digital literacy to students. I helped facilitate hands-on sessions that gave young learners the confidence to use technology in their daily lives.</p>
+                                    <p class="timeline-desc">Participated in a community service initiative focused on
+                                        teaching digital literacy to students. I helped facilitate hands-on sessions
+                                        that gave young learners the confidence to use technology in their daily lives.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -664,7 +830,9 @@
                                 <h4>Productivity Tools Training</h4>
                                 <p class="timeline-short">Workshop on Python & Adobe Photoshop.</p>
                                 <div class="timeline-desc-wrapper">
-                                    <p class="timeline-desc">Completed hands-on training in Python programming and Adobe Photoshop. These workshops helped me sharpen my coding skills and gave me practical experience in graphic design tools that I still use today.</p>
+                                    <p class="timeline-desc">Completed hands-on training in Python programming and Adobe
+                                        Photoshop. These workshops helped me sharpen my coding skills and gave me
+                                        practical experience in graphic design tools that I still use today.</p>
                                 </div>
                             </div>
                         </div>
@@ -678,31 +846,43 @@
             <div class="section-inner">
                 <div class="section-header">
                     <div class="overline">— Contact</div>
-                    <h2 class="section-title">Ready to work.<br><span class="text-muted-dark">Let's build something great.</span></h2>
-                    <p class="hero-subtitle text-muted-dark" style="max-width: 500px; margin-top: 1rem;">I'm available now and ready to start on your next project. Whether you need a full website, a web app, or someone to join your development team — let's talk.</p>
+                    <h2 class="section-title">Ready to work.<br><span class="text-muted-dark">Let's build something
+                            great.</span></h2>
+                    <p class="hero-subtitle text-muted-dark" style="max-width: 500px; margin-top: 1rem;">I'm available
+                        now and ready to start on your next project. Whether you need a full website, a web app, or
+                        someone to join your development team — let's talk.</p>
                 </div>
-                
+
                 <div class="contact-layout mt-2 ">
                     <div class="contact-content-col">
-                        <div class="info-elements-minimal dark-version">    
+                        <div class="info-elements-minimal dark-version">
                             <div class="info-item-minimal">
                                 <span class="info-label"><i class="fa-solid fa-envelope"></i> Email</span>
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stephenavarra.work@gmail.com" target="_blank" class="info-value">stephenavarra.work@gmail.com</a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stephenavarra.work@gmail.com"
+                                    target="_blank" class="info-value">stephenavarra.work@gmail.com</a>
                             </div>
                             <div class="info-item-minimal">
                                 <span class="info-label"><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
-                                <a href="https://www.linkedin.com/in/stephen-ceasar-navarra" target="_blank" rel="noopener noreferrer" class="info-value">linkedin.com/in/stephen-ceasar-navarra</a>
+                                <a href="https://www.linkedin.com/in/stephen-ceasar-navarra" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="info-value">linkedin.com/in/stephen-ceasar-navarra</a>
                             </div>
                             <div class="info-item-minimal">
                                 <span class="info-label"><i class="fa-brands fa-github"></i> GitHub</span>
-                                <a href="https://github.com/stphnvrra" target="_blank" rel="noopener noreferrer" class="info-value">github.com/stphnvrra</a>
+                                <a href="https://github.com/stphnvrra" target="_blank" rel="noopener noreferrer"
+                                    class="info-value">github.com/stphnvrra</a>
                             </div>
                         </div>
 
                         <div class="contact-actions mt-5">
                             <div class="hero-actions">
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stephenavarra.work@gmail.com" target="_blank" class="btn primary-btn" style="background:#fff; color:#000; border-color:#fff;">Let's Talk &rarr;</a>
-                                <a href="{{ url_for('static', filename='files/Stephen-Ceasar-Navarra-Resume.pdf') }}" class="btn secondary-btn" style="background:transparent; color:#fff; border-color:#444;" download>Download Resume</a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stephenavarra.work@gmail.com"
+                                    target="_blank" class="btn primary-btn"
+                                    style="background:#fff; color:#000; border-color:#fff;">Let's Talk &rarr;</a>
+                                <a href="{{ url_for('static', filename='files/Stephen-Ceasar-Navarra-Resume.pdf') }}"
+                                    class="btn secondary-btn"
+                                    style="background:transparent; color:#fff; border-color:#444;" download>Download
+                                    Resume</a>
                             </div>
                         </div>
                     </div>
@@ -752,7 +932,7 @@
             const revealElements = document.querySelectorAll(
                 '.hero-text, .hero-image-wrapper, .section-header, .feature-card, .project-card, .timeline-container, .contact-content-col, .contact-visual-col'
             );
-            
+
             revealElements.forEach((el, index) => {
                 el.classList.add('reveal');
                 // Optional: add a tiny staggered transition delay based on DOM order for elements in same section
@@ -762,7 +942,7 @@
 
             // Clean up old navigation
             const firstNav = document.querySelectorAll('nav.navbar')[0];
-            if(document.querySelectorAll('nav.navbar').length > 1) {
+            if (document.querySelectorAll('nav.navbar').length > 1) {
                 firstNav.remove(); // removes the Optimus placeholder one
             }
 
@@ -781,16 +961,16 @@
                     }
                 });
             });
-            
+
             // Generate some random ascii background bits for the light mode hero
             const gridBg = document.querySelector('.grid-background');
-            for(let i=0; i<100; i++) {
+            for (let i = 0; i < 100; i++) {
                 let el = document.createElement('div');
                 el.className = 'bg-mark';
                 el.style.left = Math.random() * 100 + 'vw';
                 el.style.top = Math.random() * 100 + 'vh';
                 el.innerText = Math.random() > 0.5 ? '┬' : '├';
-                if(Math.random() > 0.8) el.innerText = '┼';
+                if (Math.random() > 0.8) el.innerText = '┼';
                 gridBg.appendChild(el);
             }
 
@@ -817,7 +997,7 @@
                 age--;
             }
             const ageSpan = document.getElementById('dynamic-age');
-            if(ageSpan) {
+            if (ageSpan) {
                 ageSpan.textContent = age;
             }
         });
@@ -840,7 +1020,7 @@
 
                 item.addEventListener('click', function (e) {
                     if (!isTouchDevice()) return;
-                    
+
                     // Don't toggle expansion if clicking inside the gallery (opening a modal)
                     if (e.target.closest('.project-gallery')) return;
 
@@ -866,7 +1046,7 @@
 
                 row.addEventListener('click', function (e) {
                     if (!isTouchDevice()) return;
-                    
+
                     // Don't toggle expansion if clicking a link or other interactive element
                     if (e.target.closest('a, button')) return;
 
@@ -880,14 +1060,14 @@
     <script>
         // Smooth scrolling for mobile nav links
         document.querySelectorAll('.mobile-nav-links a').forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 // Close the menu first
                 document.querySelector('.navbar').classList.remove('nav-open');
-                
+
                 if (targetElement) {
                     // Slight delay to allow the menu close animation to start if needed, 
                     // though usually not strictly necessary for the scroll itself
@@ -907,7 +1087,8 @@
             <div class="modal-content" style="background-color: #0a0a0a; border: 1px solid #222; color: #f0f0f0;">
                 <div class="modal-header" style="border-bottom-color: #222;">
                     <h5 class="modal-title" id="projectModalLabel">Project Preview</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center p-0 position-relative">
                     <button class="modal-nav-btn prev-btn" onclick="navigatePhoto(-1)" aria-label="Previous image">
@@ -947,7 +1128,7 @@
                 currentIndex = 0;
             }
             updateModalContent();
-            
+
             // Show the modal using Bootstrap's API
             const modal = new bootstrap.Modal(document.getElementById('projectModal'));
             modal.show();
@@ -957,7 +1138,7 @@
             const imageData = currentGallery[currentIndex];
             const modalImg = document.getElementById('modalImage');
             const modalTitle = document.getElementById('projectModalLabel');
-            
+
             modalImg.style.opacity = '0';
             setTimeout(() => {
                 modalImg.src = imageData.src;
@@ -985,7 +1166,7 @@
                 if (e.key === 'ArrowRight') navigatePhoto(1);
                 if (e.key === 'Escape') {
                     const bsModal = bootstrap.Modal.getInstance(modal);
-                    if(bsModal) bsModal.hide();
+                    if (bsModal) bsModal.hide();
                 }
             }
         });
@@ -1001,4 +1182,5 @@
         });
     </script>
 </body>
+
 </html>

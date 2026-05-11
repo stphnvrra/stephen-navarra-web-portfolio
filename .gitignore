@@ -22,3 +22,6 @@ extract.py
 !audit_report.md
 !implementation_plan.md
 task.md
+MISC/
+*.docx
+*.pdf
