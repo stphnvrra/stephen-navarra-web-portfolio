@@ -25,3 +25,6 @@ task.md
 MISC/
 *.docx
 *.pdf
+
+.venv
+.stephen_docs/

@@ -1928,3 +1928,54 @@ main {
         text-align: left;
     }
 }
+
+/* --- Experience & Timeline Gallery --- */
+.experience-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 1.25rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 12px;
+    width: fit-content;
+    max-width: 100%;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.02), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.experience-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 160px;
+    height: 110px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.experience-gallery a:hover {
+    transform: translateY(-4px) scale(1.03);
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    opacity: 1 !important;
+}
+
+.experience-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.experience-gallery a:hover img {
+    transform: scale(1.06);
+}
