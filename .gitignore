@@ -25,6 +25,9 @@ task.md
 MISC/
 *.docx
 *.pdf
+!static/files/*.docx
+!static/files/*.pdf
 
 .venv
 .stephen_docs/
+.vercel
